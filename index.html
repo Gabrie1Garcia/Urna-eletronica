@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="divi-1">
+                 <div class="divi-1-esquerda">
+                     <div class="divi-1-1">
+                        <span>SEU VOTO PARA</span>
+                     </div>
+                     <div class="divi-1-2">
+                         <span>VEREADOR</span>
+                     </div>
+                     <div class="divi-1-3">
+                         <div class="numero pisca"></div>
+                         <div class="numero"></div>
+                     </div>
+                     <div class="divi-1-4">
+                         Nome: José da Silva <br>
+                         Partido: QQQ <br>
+                         Vice-Prefeito: Paulo Oliveira
+                     </div>
+                 </div>
+                 <div class="divi-1-direita">
+                     <div class="d-1-image">
+                         <img src="assets/candidato_3.jpeg" alt="" height="130px" width="90px">
+                         Prefeito
+                     </div>
+                     <div class="d-1-image small">
+                        <img src="assets/candidato_2.jpeg" alt="" height="100px" width="90px">
+                        Vice-Prefeito
+                    </div>
+                 </div>
+            </div>
+            <div class="divi-2">
+                Aperte a tela: <br>
+                Confirma para CONFIRMAR este voto <br>
+                Corrige para REINICIAR este voto
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('1')">1</div>
+                <div class="teclado--botao" onclick="clicou('2')">2</div>
+                <div class="teclado--botao" onclick="clicou('3')">3</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('4')">4</div>
+                <div class="teclado--botao" onclick="clicou('5')">5</div>
+                <div class="teclado--botao" onclick="clicou('6')">6</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('7')">7</div>
+                <div class="teclado--botao"onclick="clicou('8')">8</div>
+                <div class="teclado--botao"onclick="clicou('9')">9</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao"onclick="clicou('0')">0</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao botao--branco"onclick="branco()">BRANCO</div>
+                <div class="teclado--botao botao--corrige"onclick="corrige()">CORRIGE</div>
+                <div class="teclado--botao botao--confirma"onclick="confirma()">CONFIRMA</div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script/etapas.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
